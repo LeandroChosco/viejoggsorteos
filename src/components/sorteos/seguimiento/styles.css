@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+:root{
+    --x: 45deg;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65), rgba(9,0,77,0.65)), url(../../../image/image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 10px 20px;
+    margin-right: 30px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+nav span{
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+h1{
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.titleTable{
+    color: #fff;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+table th {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+select {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+select option {
+    background: rgba(9, 0, 77, 0.65);
+    color: #fff;
+}
+
+/* Icono del menú hamburguesa */
+.hamburger {
+    display: none; /* Se oculta por defecto en pantallas grandes */
+    cursor: pointer;
+    flex-direction: column;
+    height: 20px;
+    margin-bottom: 25px;
+}
+
+.hamburger span {
+    margin-top: 2px;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suave transición para el color de fondo */
+}
+
+/* Cambios de icono en estado activo (menú abierto) */
+.hamburger.toggle span:nth-child(1) {
+    transform: rotate(45deg) translateY(6px);
+}
+
+.hamburger.toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.toggle span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-6px);
+}   
+
+@media only screen and (max-width: 768px){
+    /* Configuración del menú oculto por defecto */
+    /* Configuración del menú oculto por defecto */
+    ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        transition: height 0.3s ease-in;
+        z-index: 1; /* Asegúrate de que el menú esté encima del contenido */
+    }
+
+    /* Estilo cuando el menú está activo */
+    ul.active {
+        position: absolute;
+        top:0;
+        right:0;
+        height: 150px; /* Ajusta este valor según la cantidad de enlaces */
+    }
+
+    /* Ajusta los enlaces dentro del menú */
+    ul li {
+        margin: 10px 0;
+    }
+
+    /* Muestra el icono del menú hamburguesa en pantallas pequeñas */
+    .hamburger {
+        display: flex;
+        z-index: 2;
+    }
+    .titleTable{
+        color: #fff;
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    th, td {
+        font-size: 12px; /* Reduce el tamaño de la fuente */
+        padding: 6px; /* Reduce el espaciado en las celdas */
+        width: 33.33333%;
+    }
+
+    /* Mantener las columnas en una fila y permitir que se reduzcan */
+    table {
+        display: flex;
+        flex-direction: column; /* Cambia a flexbox */
+    }
+
+    table tr {
+        display: flex; /* Usar flexbox para las filas */
+        flex-wrap: wrap; /* Permitir el ajuste de las celdas */
+    }
+
+
+    td {
+        display: block; /* Cada celda se muestra como un bloque */
+        width: 33.33333%; /* Cada celda ocupa el 50% del ancho de la fila */
+    }
+        
+    .mobileCol{
+        display: none;
+    }
+    .col3{
+        width: 33.3333%;
+    }
+    .col4{
+        display: none;
+    }
+    select {
+        width: 100%;
+        padding: 3px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 0.9em;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+    }
+}

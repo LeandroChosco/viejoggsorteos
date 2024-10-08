@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <title>Gestion de sorteos</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script type="module" src="../../firebaseconnect.js"></script>
+  <script type="module" src="../../firebaseconnectDB.js"></script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <img src="../../image/logoViejo.png" alt="ViejoGG" class="logo" />
+      <span>ViejoGG</span>
+      <ul class="nav-links">
+        <li>
+          <a href="#">Inicio</a>
+        </li>
+        <li>
+          <a href="./seguimiento/seguimiento.html">Seguimiento de sorteo</a>
+        </li>
+        <li>
+          <a href="../../index.html" onclick="signOut()">Cerrar Sesion</a>
+        </li>
+        
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <h1 class="titleRandom">Abre cancha con los sorteos</h1>
+    <form class="form" id="form">
+      <div>
+        <label for="nickAlbion" class="formInput">Nick de Albion:</label>
+        <input type="text" id="nickAlbion" name="nickAlbion" class="inputForm1" required />
+      </div>
+
+      <div id="itemsMonturaInput" style="position: relative">
+        <label for="itemsMontura" class="formInput">Items/Montura:</label>
+        <input type="text" id="buscador" class="inputForm2" placeholder="Buscar..." autocomplete="off" />
+        <input type="hidden" id="valorSeleccionado" />
+        <ul id="sugerencias"></ul>
+      </div>
+
+      <button class="buttonAdd" tyoe="submit">
+        <i></i>
+        <i></i>
+        <span>Agregar</span>
+      </button>
+    </form>
+    <table id="itemsTable">
+      <caption class="titleTable">
+        Agregados recientemente
+      </caption>
+      <thead>
+        <tr>
+          <th class="th01">Nick de Albion</th>
+          <th class="th02">Items/Montura</th>
+          <th class="th03">Estado</th>
+          <th class="th04">Fecha y Hora</th>
+        </tr>
+      </thead>
+      <tbody >
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./sorteos.js"></script>
+</body>

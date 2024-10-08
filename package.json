@@ -1,0 +1,16 @@
+{
+  "name": "gestorjs",
+  "version": "1.0.0",
+  "description": "Gestor sorteos",
+  "main": "index.js",
+  "dependencies": {
+    "firebase": "^10.13.2",
+    "moment": "^2.30.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leandro Chosco",
+  "license": "ISC"
+}

@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+:root{
+    --x: 45deg;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65), rgba(9,0,77,0.65)), url(../../image/image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 10px 20px;
+    margin-right: 30px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+nav span{
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+h1{
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.titleTable{
+    color: #fff;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+table th {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+  
+table .added {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    /* Agregar una clase para remover la animación al finalizar */
+    animation: fadeInUp 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animated-finished {
+    animation: none;
+  }
+input[type="text"] {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+input[type="text"]::placeholder {
+    color: #ccc;
+}
+select {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+select option {
+    background: rgba(9, 0, 77, 0.65);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+.buttonAdd{
+    position:relative;
+    width: 150px;
+    height: 55px;
+    display: inline-block;
+    left: 10%;
+    top:30%;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.buttonAdd i{
+    position: absolute;
+    inset: -2px;
+    display: block;
+    border-radius: 5px;
+    
+}
+
+.buttonAdd i, .buttonAdd i:nth-child(2){
+    background: linear-gradient(var(--x), #00ccff, #0e1538, #0e1538, #d400d4);
+}
+
+.buttonAdd i:nth-child(2){
+    filter:blur(10px)
+}
+
+.buttonAdd span{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color:#fff;
+    letter-spacing: 3px;
+    background: rgba(14, 21, 56, 0.65);
+    overflow: hidden;
+}
+
+.buttonAdd span::before{
+    content: '';
+    position:absolute;
+    top:0;
+    left:-50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.075);
+    transform: skew(25deg);
+}
+
+#sugerencias {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    color:black;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  #sugerencias li:hover {
+    background-color: #42b4e9; /* Cambia el color de fondo al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+  }
+  #buscador:focus + #sugerencias {
+    display: block;
+  }
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea una cuadrícula de 3 columnas de igual ancho */
+    gap: 10px; /* Espacio entre elementos */
+  }
+.inputForm1{
+    grid-column: 1;
+
+}
+.inputForm2 {
+    grid-column: 2; 
+  }
+  
+a{
+    grid-column: 3;
+}
+.formInput{
+    color:#fff;
+    font-size: 1.5em;
+}
+
+/* Icono del menú hamburguesa */
+.hamburger {
+    display: none; /* Se oculta por defecto en pantallas grandes */
+    cursor: pointer;
+    flex-direction: column;
+    height: 20px;
+    margin-bottom: 25px;
+}
+
+.hamburger span {
+    margin-top: 2px;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suave transición para el color de fondo */
+}
+
+/* Cambios de icono en estado activo (menú abierto) */
+.hamburger.toggle span:nth-child(1) {
+    transform: rotate(45deg) translateY(6px);
+}
+
+.hamburger.toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.toggle span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-6px);
+}   
+
+/* MEDIA QUERY: Estilos para pantallas pequeñas (<= 768px) */
+@media only screen and (max-width: 768px) {
+
+    body{
+        width: 100vw;
+    }
+    .container{
+        max-height: auto !important;
+        width: 100vw;
+    }
+
+    .form {
+        display: flex;          /* Usa flexbox para alinear los elementos */
+        flex-direction: column; /* Apila los elementos en columna */
+        align-items: stretch;   /* Asegura que todos los elementos ocupen el ancho completo */
+        width: 100%;            /* Asegúrate de que el formulario ocupe el 100% del contenedor */
+        padding: 20px;         /* Añade un poco de padding al formulario */
+    }
+    #sugerencias {
+        /* Ajustes específicos para pantallas pequeñas */
+        max-height: 150px; /* Por ejemplo, reducir la altura máxima */
+        border: 1px solid #008CBA; /* Cambia el color del borde */
+        z-index: 1;
+        height: 100px;
+    }
+
+    #sugerencias li {
+        padding: 10px; /* Ajusta el espaciado de los elementos de la lista */
+        font-size: 14px; /* Cambia el tamaño de la fuente */
+    }
+    .form div {
+        width: 100%;           /* Cada div ocupa el 100% del ancho */
+    }
+
+    .inputForm1, .inputForm2 {
+        width: 100%;           /* Asegúrate de que los inputs ocupen el 100% del ancho */
+        box-sizing: border-box; /* Incluye padding y border en el cálculo de ancho */
+    }
+
+    .buttonAdd {
+        width: 50%;           /* Botón ocupa el 100% del ancho */
+        margin-top: 10px;
+        left:20%;    
+    }
+
+   
+    /* Configuración del menú oculto por defecto */
+    ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        transition: height 0.3s ease-in;
+        z-index: 1; /* Asegúrate de que el menú esté encima del contenido */
+    }
+
+    /* Estilo cuando el menú está activo */
+    ul.active {
+        position: absolute;
+        top:0;
+        right:0;
+        height: 150px; /* Ajusta este valor según la cantidad de enlaces */
+    }
+
+    /* Ajusta los enlaces dentro del menú */
+    ul li {
+        margin: 10px 0;
+    }
+
+    /* Muestra el icono del menú hamburguesa en pantallas pequeñas */
+    .hamburger {
+        display: flex;
+        z-index: 2;
+    }
+
+.titleRandom{
+    color: #fff;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+    /* responsive table */
+
+
+    .titleTable{
+        color: #fff;
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    th, td {
+        font-size: 12px; /* Reduce el tamaño de la fuente */
+        padding: 6px; /* Reduce el espaciado en las celdas */
+        width: 50%;
+    }
+
+    /* Mantener las columnas en una fila y permitir que se reduzcan */
+    table {
+        display: flex;
+        flex-direction: column; /* Cambia a flexbox */
+    }
+
+    table tr {
+        display: flex; /* Usar flexbox para las filas */
+        flex-wrap: wrap; /* Permitir el ajuste de las celdas */
+    }
+
+
+    td {
+        display: block; /* Cada celda se muestra como un bloque */
+        width: 50%; /* Cada celda ocupa el 50% del ancho de la fila */
+        box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    }
+    .col3, .col4, .th03, .th04{
+        display: none;
+    }
+
+
+}

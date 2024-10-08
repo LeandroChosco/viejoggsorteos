@@ -1,0 +1,996 @@
+[
+    {
+        "valor": "Buey de transporte T3",
+        "texto": "Buey de transporte T3"
+    },
+    {
+        "valor": "Buey de transporte T4",
+        "texto": "Buey de transporte T4"
+    },
+    {
+        "valor": "Buey de transporte T5",
+        "texto": "Buey de transporte T5"
+    },
+    {
+        "valor": "Buey de transporte T6",
+        "texto": "Buey de transporte T6"
+    },
+    {
+        "valor": "Buey de transporte T7",
+        "texto": "Buey de transporte T7"
+    },
+    {
+        "valor": "Buey de transporte T8",
+        "texto": "Buey de transporte T8"
+    },
+    {
+        "valor": "Caballo de montar T3",
+        "texto": "Caballo de montar T3"
+    },
+    {
+        "valor": "Caballo de montar T4",
+        "texto": "Caballo de montar T4"
+    },
+    {
+        "valor": "Caballo de montar T5",
+        "texto": "Caballo de montar T5"
+    },
+    {
+        "valor": "Caballo de montar T6",
+        "texto": "Caballo de montar T6"
+    },
+    {
+        "valor": "Caballo de montar T7",
+        "texto": "Caballo de montar T7"
+    },
+    {
+        "valor": "Caballo de montar T8",
+        "texto": "Caballo de montar T8"
+    },
+    {
+        "valor": "Garrapresta",
+        "texto": "Garrapresta"
+    },
+    {
+        "valor": "Ciervo",
+        "texto": "Ciervo"
+    },
+    {
+        "valor": "Caballo blindado T5",
+        "texto": "Caballo blindado T5"
+    },
+    {
+        "valor": "Caballo blindado T6",
+        "texto": "Caballo blindado T6"
+    },
+    {
+        "valor": "Caballo blindado T7",
+        "texto": "Caballo blindado T7"
+    },
+    {
+        "valor": "Caballo blindado T8",
+        "texto": "Caballo blindado T8"
+    },
+    {
+        "valor": "Oso de Invierno ensillado",
+        "texto": "Oso de Invierno ensillado"
+    },
+    {
+        "valor": "Jabali ensillado T5",
+        "texto": "Jabali ensillado T5"
+    },
+    {
+        "valor": "Salamandra ensillada de pantano T5",
+        "texto": "Salamandra ensillada de pantano T5"
+    },
+    {
+        "valor": "Ave Moa ensilaada T5",
+        "texto": "Avemoa ensillada T5"
+    },
+    {
+        "valor": "Carnero cimarron ensillado T5",
+        "texto": "Carnero cimarron ensillado T5"
+    },
+    {
+        "valor": "Lobo gris ensillado",
+        "texto": "Lobo gris ensillado"
+    },
+    {
+        "valor": "Buho mistico ensillado T5",
+        "texto": "Buho mistico ensillado T5"
+    },
+    {
+        "valor": "Alce",
+        "texto": "Alce"
+    },
+    {
+        "valor": "Huargo",
+        "texto": "Huargo"
+    },
+    {
+        "valor": "Jabali ensillado T7",
+        "texto": "Jabali ensillado T7"
+    },
+    {
+        "valor": "Dragon de pantano ensillado T7",
+        "texto": "Dragon de pantano ensillado T7"
+    },
+    {
+        "valor": "Oso gigante ensillado T8",
+        "texto": "Oso gigante ensillado T8"
+    },{
+        "valor": "Oso de invierno de elite T8",
+        "texto": "Oso de invierno de elite T8"
+    },{
+        "valor": "Jabali salvaje de elite T8",
+        "texto": "Jabali salvaje de elite T8"
+    },{
+        "valor": "Salamandra de pantano de elite T8",
+        "texto": "Salamandra de pantano de elite T8"
+    },{
+        "valor": "Mamut de transporte del anciano",
+        "texto": "Mamut de transporte del anciano"
+    },{
+        "valor": "Ave de terror de elite T8",
+        "texto": "Ave de terror de elite T8"
+    },{
+        "valor": "Carnero cimarron de elite T8",
+        "texto": "Carnero cimarron de elite T8"
+    },{
+        "valor": "Lobo gris de elite T8",
+        "texto": "Lobo gris de elite T8"
+    },{
+        "valor": "Buho mistico de elite T8",
+        "texto": "Buho mistico de elite T8"
+    },{
+        "valor": "Botas de soldado del iniciado T4",
+        "texto": "Botas de soldado del iniciado T4"
+    },{
+        "valor": "Botas de soldado del iniciado T4.1",
+        "texto": "Botas de soldado del iniciado T4.1"
+    },{
+        "valor": "Botas de soldado del iniciado T4.2",
+        "texto": "Botas de soldado del iniciado T4.2"
+    },{
+        "valor": "Botas de soldado del iniciado T4.3",
+        "texto": "Botas de soldado del iniciado T4.3"
+    },{
+        "valor": "Botas de soldado del iniciado T4.4",
+        "texto": "Botas de soldado del iniciado T4.4"
+    },{
+        "texto": "Botas del caballero del iniciado T4.0",
+        "valor": "Botas del caballero del iniciado T4.0"
+    },
+    {
+        "texto": "Botas del caballero del iniciado T4.1",
+        "valor": "Botas del caballero del iniciado T4.1"
+    },
+    {
+        "texto": "Botas del caballero del iniciado T4.2",
+        "valor": "Botas del caballero del iniciado T4.2"
+    },
+    {
+        "texto": "Botas del caballero del iniciado T4.3",
+        "valor": "Botas del caballero del iniciado T4.3"
+    },
+    {
+        "texto": "Botas del caballero del iniciado T4.4",
+        "valor": "Botas del caballero del iniciado T4.4"
+    },{
+        "texto": "Botas de guardian del iniciado T4.0",
+        "valor": "Botas de guardian del iniciado T4.0"
+    },
+    {
+        "texto": "Botas de guardian del iniciado T4.1",
+        "valor": "Botas de guardian del iniciado T4.1"
+    },
+    {
+        "texto": "Botas de guardian del iniciado T4.2",
+        "valor": "Botas de guardian del iniciado T4.2"
+    },
+    {
+        "texto": "Botas de guardian del iniciado T4.3",
+        "valor": "Botas de guardian del iniciado T4.3"
+    },
+    {
+        "texto": "Botas de guardian del iniciado T4.4",
+        "valor": "Botas de guardian del iniciado T4.4"
+    },{
+        "texto": "Botas reales del iniciado T4.0",
+        "valor": "Botas reales del iniciado T4.0"
+    },
+    {
+        "texto": "Botas reales del iniciado T4.1",
+        "valor": "Botas reales del iniciado T4.1"
+    },
+    {
+        "texto": "Botas reales del iniciado T4.2",
+        "valor": "Botas reales del iniciado T4.2"
+    },
+    {
+        "texto": "Botas reales del iniciado T4.3",
+        "valor": "Botas reales del iniciado T4.3"
+    },
+    {
+        "texto": "Botas reales del iniciado T4.4",
+        "valor": "Botas reales del iniciado T4.4"
+    },{
+        "texto": "Botas de guardatumbas del iniciado T4.0",
+        "valor": "Botas de guardatumbas del iniciado T4.0"
+    },
+    {
+        "texto": "Botas de guardatumbas del iniciado T4.1",
+        "valor": "Botas de guardatumbas del iniciado T4.1"
+    },
+    {
+        "texto": "Botas de guardatumbas del iniciado T4.2",
+        "valor": "Botas de guardatumbas del iniciado T4.2"
+    },
+    {
+        "texto": "Botas de guardatumbas del iniciado T4.3",
+        "valor": "Botas de guardatumbas del iniciado T4.3"
+    },
+    {
+        "texto": "Botas de guardatumbas del iniciado T4.4",
+        "valor": "Botas de guardatumbas del iniciado T4.4"
+    },{
+        "texto": "Botas de demonio del iniciado T4.0",
+        "valor": "Botas de demonio del iniciado T4.0"
+    },
+    {
+        "texto": "Botas de demonio del iniciado T4.1",
+        "valor": "Botas de demonio del iniciado T4.1"
+    },
+    {
+        "texto": "Botas de demonio del iniciado T4.2",
+        "valor": "Botas de demonio del iniciado T4.2"
+    },
+    {
+        "texto": "Botas de demonio del iniciado T4.3",
+        "valor": "Botas de demonio del iniciado T4.3"
+    },
+    {
+        "texto": "Botas de demonio del iniciado T4.4",
+        "valor": "Botas de demonio del iniciado T4.4"
+    },{
+        "texto": "Botas de juez del iniciado T4.0",
+        "valor": "Botas de juez del iniciado T4.0"
+    },
+    {
+        "texto": "Botas de juez del iniciado T4.1",
+        "valor": "Botas de juez del iniciado T4.1"
+    },
+    {
+        "texto": "Botas de juez del iniciado T4.2",
+        "valor": "Botas de juez del iniciado T4.2"
+    },
+    {
+        "texto": "Botas de juez del iniciado T4.3",
+        "valor": "Botas de juez del iniciado T4.3"
+    },
+    {
+        "texto": "Botas de juez del iniciado T4.4",
+        "valor": "Botas de juez del iniciado T4.4"
+    },{
+        "texto": "Botas crepusculares del iniciado T4.0",
+        "valor": "Botas crepusculares del iniciado T4.0"
+    },
+    {
+        "texto": "Botas crepusculares del iniciado T4.1",
+        "valor": "Botas crepusculares del iniciado T4.1"
+    },
+    {
+        "texto": "Botas crepusculares del iniciado T4.2",
+        "valor": "Botas crepusculares del iniciado T4.2"
+    },
+    {
+        "texto": "Botas crepusculares del iniciado T4.3",
+        "valor": "Botas crepusculares del iniciado T4.3"
+    },
+    {
+        "texto": "Botas crepusculares del iniciado T4.4",
+        "valor": "Botas crepusculares del iniciado T4.4"
+    },{
+        "texto": "Botas de valor del iniciado T4.0",
+        "valor": "Botas de valor del iniciado T4.0"
+    },
+    {
+        "texto": "Botas de valor del iniciado T4.1",
+        "valor": "Botas de valor del iniciado T4.1"
+    },
+    {
+        "texto": "Botas de valor del iniciado T4.2",
+        "valor": "Botas de valor del iniciado T4.2"
+    },
+    {
+        "texto": "Botas de valor del iniciado T4.3",
+        "valor": "Botas de valor del iniciado T4.3"
+    },
+    {
+        "texto": "Botas de valor del iniciado T4.4",
+        "valor": "Botas de valor del iniciado T4.4"
+    },{
+        "valor": "Botas de soldado del experto T5",
+        "texto": "Botas de soldado del experto T5"
+    },{
+        "valor": "Botas de soldado del experto T5.1",
+        "texto": "Botas de soldado del experto T5.1"
+    },{
+        "valor": "Botas de soldado del experto T5.2",
+        "texto": "Botas de soldado del experto T5.2"
+    },{
+        "valor": "Botas de soldado del experto T5.3",
+        "texto": "Botas de soldado del experto T5.3"
+    },{
+        "valor": "Botas de soldado del experto T5.4",
+        "texto": "Botas de soldado del experto T5.4"
+    },{
+        "texto": "Botas del caballero del experto T5.0",
+        "valor": "Botas del caballero del experto T5.0"
+    },
+    {
+        "texto": "Botas del caballero del experto T5.1",
+        "valor": "Botas del caballero del experto T5.1"
+    },
+    {
+        "texto": "Botas del caballero del experto T5.2",
+        "valor": "Botas del caballero del experto T5.2"
+    },
+    {
+        "texto": "Botas del caballero del experto T5.3",
+        "valor": "Botas del caballero del experto T5.3"
+    },
+    {
+        "texto": "Botas del caballero del experto T5.4",
+        "valor": "Botas del caballero del experto T5.4"
+    },{
+        "texto": "Botas de guardian del experto T5.0",
+        "valor": "Botas de guardian del experto T5.0"
+    },
+    {
+        "texto": "Botas de guardian del experto T5.1",
+        "valor": "Botas de guardian del experto T5.1"
+    },
+    {
+        "texto": "Botas de guardian del experto T5.2",
+        "valor": "Botas de guardian del experto T5.2"
+    },
+    {
+        "texto": "Botas de guardian del experto T5.3",
+        "valor": "Botas de guardian del experto T5.3"
+    },
+    {
+        "texto": "Botas de guardian del experto T5.4",
+        "valor": "Botas de guardian del experto T5.4"
+    },{
+        "texto": "Botas reales del experto T5.0",
+        "valor": "Botas reales del experto T5.0"
+    },
+    {
+        "texto": "Botas reales del experto T5.1",
+        "valor": "Botas reales del experto T5.1"
+    },
+    {
+        "texto": "Botas reales del experto T5.2",
+        "valor": "Botas reales del experto T5.2"
+    },
+    {
+        "texto": "Botas reales del experto T5.3",
+        "valor": "Botas reales del experto T5.3"
+    },
+    {
+        "texto": "Botas reales del experto T5.4",
+        "valor": "Botas reales del experto T5.4"
+    },{
+        "texto": "Botas de guardatumbas del experto T5.0",
+        "valor": "Botas de guardatumbas del experto T5.0"
+    },
+    {
+        "texto": "Botas de guardatumbas del experto T5.1",
+        "valor": "Botas de guardatumbas del experto T5.1"
+    },
+    {
+        "texto": "Botas de guardatumbas del experto T5.2",
+        "valor": "Botas de guardatumbas del experto T5.2"
+    },
+    {
+        "texto": "Botas de guardatumbas del experto T5.3",
+        "valor": "Botas de guardatumbas del experto T5.3"
+    },
+    {
+        "texto": "Botas de guardatumbas del experto T5.4",
+        "valor": "Botas de guardatumbas del experto T5.4"
+    },{
+        "texto": "Botas de demonio del experto T5.0",
+        "valor": "Botas de demonio del experto T5.0"
+    },
+    {
+        "texto": "Botas de demonio del experto T5.1",
+        "valor": "Botas de demonio del experto T5.1"
+    },
+    {
+        "texto": "Botas de demonio del experto T5.2",
+        "valor": "Botas de demonio del experto T5.2"
+    },
+    {
+        "texto": "Botas de demonio del experto T5.3",
+        "valor": "Botas de demonio del experto T5.3"
+    },
+    {
+        "texto": "Botas de demonio del experto T5.4",
+        "valor": "Botas de demonio del experto T5.4"
+    },{
+        "texto": "Botas de juez del experto T5.0",
+        "valor": "Botas de juez del experto T5.0"
+    },
+    {
+        "texto": "Botas de juez del experto T5.1",
+        "valor": "Botas de juez del experto T5.1"
+    },
+    {
+        "texto": "Botas de juez del experto T5.2",
+        "valor": "Botas de juez del experto T5.2"
+    },
+    {
+        "texto": "Botas de juez del experto T5.3",
+        "valor": "Botas de juez del experto T5.3"
+    },
+    {
+        "texto": "Botas de juez del experto T5.4",
+        "valor": "Botas de juez del experto T5.4"
+    },{
+        "texto": "Botas crepusculares del experto T5.0",
+        "valor": "Botas crepusculares del experto T5.0"
+    },
+    {
+        "texto": "Botas crepusculares del experto T5.1",
+        "valor": "Botas crepusculares del experto T5.1"
+    },
+    {
+        "texto": "Botas crepusculares del experto T5.2",
+        "valor": "Botas crepusculares del experto T5.2"
+    },
+    {
+        "texto": "Botas crepusculares del experto T5.3",
+        "valor": "Botas crepusculares del experto T5.3"
+    },
+    {
+        "texto": "Botas crepusculares del experto T5.4",
+        "valor": "Botas crepusculares del experto T5.4"
+    },{
+        "texto": "Botas de valor del experto T5.0",
+        "valor": "Botas de valor del experto T5.0"
+    },
+    {
+        "texto": "Botas de valor del experto T5.1",
+        "valor": "Botas de valor del experto T5.1"
+    },
+    {
+        "texto": "Botas de valor del experto T5.2",
+        "valor": "Botas de valor del experto T5.2"
+    },
+    {
+        "texto": "Botas de valor del experto T5.3",
+        "valor": "Botas de valor del experto T5.3"
+    },
+    {
+        "texto": "Botas de valor del experto T5.4",
+        "valor": "Botas de valor del experto T5.4"
+    },{
+        "valor": "Botas de soldado del maestro T6",
+        "texto": "Botas de soldado del maestro T6"
+    },{
+        "valor": "Botas de soldado del maestro T6.1",
+        "texto": "Botas de soldado del maestro T6.1"
+    },{
+        "valor": "Botas de soldado del maestro T6.2",
+        "texto": "Botas de soldado del maestro T6.2"
+    },{
+        "valor": "Botas de soldado del maestro T6.3",
+        "texto": "Botas de soldado del maestro T6.3"
+    },{
+        "valor": "Botas de soldado del maestro T6.4",
+        "texto": "Botas de soldado del maestro T6.4"
+    },{
+        "texto": "Botas del caballero del maestro T6.0",
+        "valor": "Botas del caballero del maestro T6.0"
+    },
+    {
+        "texto": "Botas del caballero del maestro T6.1",
+        "valor": "Botas del caballero del maestro T6.1"
+    },
+    {
+        "texto": "Botas del caballero del maestro T6.2",
+        "valor": "Botas del caballero del maestro T6.2"
+    },
+    {
+        "texto": "Botas del caballero del maestro T6.3",
+        "valor": "Botas del caballero del maestro T6.3"
+    },
+    {
+        "texto": "Botas del caballero del maestro T6.4",
+        "valor": "Botas del caballero del maestro T6.4"
+    },{
+        "texto": "Botas de guardian del maestro T6.0",
+        "valor": "Botas de guardian del maestro T6.0"
+    },
+    {
+        "texto": "Botas de guardian del maestro T6.1",
+        "valor": "Botas de guardian del maestro T6.1"
+    },
+    {
+        "texto": "Botas de guardian del maestro T6.2",
+        "valor": "Botas de guardian del maestro T6.2"
+    },
+    {
+        "texto": "Botas de guardian del maestro T6.3",
+        "valor": "Botas de guardian del maestro T6.3"
+    },
+    {
+        "texto": "Botas de guardian del maestro T6.4",
+        "valor": "Botas de guardian del maestro T6.4"
+    },{
+        "texto": "Botas reales del maestro T6.0",
+        "valor": "Botas reales del maestro T6.0"
+    },
+    {
+        "texto": "Botas reales del maestro T6.1",
+        "valor": "Botas reales del maestro T6.1"
+    },
+    {
+        "texto": "Botas reales del maestro T6.2",
+        "valor": "Botas reales del maestro T6.2"
+    },
+    {
+        "texto": "Botas reales del maestro T6.3",
+        "valor": "Botas reales del maestro T6.3"
+    },
+    {
+        "texto": "Botas reales del maestro T6.4",
+        "valor": "Botas reales del maestro T6.4"
+    },{
+        "texto": "Botas de guardatumbas del maestro T6.0",
+        "valor": "Botas de guardatumbas del maestro T6.0"
+    },
+    {
+        "texto": "Botas de guardatumbas del maestro T6.1",
+        "valor": "Botas de guardatumbas del maestro T6.1"
+    },
+    {
+        "texto": "Botas de guardatumbas del maestro T6.2",
+        "valor": "Botas de guardatumbas del maestro T6.2"
+    },
+    {
+        "texto": "Botas de guardatumbas del maestro T6.3",
+        "valor": "Botas de guardatumbas del maestro T6.3"
+    },
+    {
+        "texto": "Botas de guardatumbas del maestro T6.4",
+        "valor": "Botas de guardatumbas del maestro T6.4"
+    },{
+        "texto": "Botas de demonio del maestro T6.0",
+        "valor": "Botas de demonio del maestro T6.0"
+    },
+    {
+        "texto": "Botas de demonio del maestro T6.1",
+        "valor": "Botas de demonio del maestro T6.1"
+    },
+    {
+        "texto": "Botas de demonio del maestro T6.2",
+        "valor": "Botas de demonio del maestro T6.2"
+    },
+    {
+        "texto": "Botas de demonio del maestro T6.3",
+        "valor": "Botas de demonio del maestro T6.3"
+    },
+    {
+        "texto": "Botas de demonio del maestro T6.4",
+        "valor": "Botas de demonio del maestro T6.4"
+    },{
+        "texto": "Botas de juez del maestro T6.0",
+        "valor": "Botas de juez del maestro T6.0"
+    },
+    {
+        "texto": "Botas de juez del maestro T6.1",
+        "valor": "Botas de juez del maestro T6.1"
+    },
+    {
+        "texto": "Botas de juez del maestro T6.2",
+        "valor": "Botas de juez del maestro T6.2"
+    },
+    {
+        "texto": "Botas de juez del maestro T6.3",
+        "valor": "Botas de juez del maestro T6.3"
+    },
+    {
+        "texto": "Botas de juez del maestro T6.4",
+        "valor": "Botas de juez del maestro T6.4"
+    },{
+        "texto": "Botas crepusculares del maestro T6.0",
+        "valor": "Botas crepusculares del maestro T6.0"
+    },
+    {
+        "texto": "Botas crepusculares del maestro T6.1",
+        "valor": "Botas crepusculares del maestro T6.1"
+    },
+    {
+        "texto": "Botas crepusculares del maestro T6.2",
+        "valor": "Botas crepusculares del maestro T6.2"
+    },
+    {
+        "texto": "Botas crepusculares del maestro T6.3",
+        "valor": "Botas crepusculares del maestro T6.3"
+    },
+    {
+        "texto": "Botas crepusculares del maestro T6.4",
+        "valor": "Botas crepusculares del maestro T6.4"
+    },{
+        "texto": "Botas de valor del maestro T6.0",
+        "valor": "Botas de valor del maestro T6.0"
+    },
+    {
+        "texto": "Botas de valor del maestro T6.1",
+        "valor": "Botas de valor del maestro T6.1"
+    },
+    {
+        "texto": "Botas de valor del maestro T6.2",
+        "valor": "Botas de valor del maestro T6.2"
+    },
+    {
+        "texto": "Botas de valor del maestro T6.3",
+        "valor": "Botas de valor del maestro T6.3"
+    },
+    {
+        "texto": "Botas de valor del maestro T6.4",
+        "valor": "Botas de valor del maestro T6.4"
+    },{
+        "valor": "Botas de soldado del gran maestro T7",
+        "texto": "Botas de soldado del gran maestro T7"
+    },{
+        "valor": "Botas de soldado del gran maestro T7.1",
+        "texto": "Botas de soldado del gran maestro T7.1"
+    },{
+        "valor": "Botas de soldado del gran maestro T7.2",
+        "texto": "Botas de soldado del gran maestro T7.2"
+    },{
+        "valor": "Botas de soldado del gran maestro T7.3",
+        "texto": "Botas de soldado del gran maestro T7.3"
+    },{
+        "valor": "Botas de soldado del gran maestro T7.4",
+        "texto": "Botas de soldado del gran maestro T7.4"
+    },{
+        "texto": "Botas del caballero del gran maestro T7.0",
+        "valor": "Botas del caballero del gran maestro T7.0"
+    },
+    {
+        "texto": "Botas del caballero del gran maestro T7.1",
+        "valor": "Botas del caballero del gran maestro T7.1"
+    },
+    {
+        "texto": "Botas del caballero del gran maestro T7.2",
+        "valor": "Botas del caballero del gran maestro T7.2"
+    },
+    {
+        "texto": "Botas del caballero del gran maestro T7.3",
+        "valor": "Botas del caballero del gran maestro T7.3"
+    },
+    {
+        "texto": "Botas del caballero del gran maestro T7.4",
+        "valor": "Botas del caballero del gran maestro T7.4"
+    },{
+        "texto": "Botas de guardian del gran maestro T7.0",
+        "valor": "Botas de guardian del gran maestro T7.0"
+    },
+    {
+        "texto": "Botas de guardian del gran maestro T7.1",
+        "valor": "Botas de guardian del gran maestro T7.1"
+    },
+    {
+        "texto": "Botas de guardian del gran maestro T7.2",
+        "valor": "Botas de guardian del gran maestro T7.2"
+    },
+    {
+        "texto": "Botas de guardian del gran maestro T7.3",
+        "valor": "Botas de guardian del gran maestro T7.3"
+    },
+    {
+        "texto": "Botas de guardian del gran maestro T7.4",
+        "valor": "Botas de guardian del gran maestro T7.4"
+    },{
+        "texto": "Botas reales del gran maestro T7.0",
+        "valor": "Botas reales del gran maestro T7.0"
+    },
+    {
+        "texto": "Botas reales del gran maestro T7.1",
+        "valor": "Botas reales del gran maestro T7.1"
+    },
+    {
+        "texto": "Botas reales del gran maestro T7.2",
+        "valor": "Botas reales del gran maestro T7.2"
+    },
+    {
+        "texto": "Botas reales del gran maestro T7.3",
+        "valor": "Botas reales del gran maestro T7.3"
+    },
+    {
+        "texto": "Botas reales del gran maestro T7.4",
+        "valor": "Botas reales del gran maestro T7.4"
+    },{
+        "texto": "Botas de guardatumbas del gran maestro T7.0",
+        "valor": "Botas de guardatumbas del gran maestro T7.0"
+    },
+    {
+        "texto": "Botas de guardatumbas del gran maestro T7.1",
+        "valor": "Botas de guardatumbas del gran maestro T7.1"
+    },
+    {
+        "texto": "Botas de guardatumbas del gran maestro T7.2",
+        "valor": "Botas de guardatumbas del gran maestro T7.2"
+    },
+    {
+        "texto": "Botas de guardatumbas del gran maestro T7.3",
+        "valor": "Botas de guardatumbas del gran maestro T7.3"
+    },
+    {
+        "texto": "Botas de guardatumbas del gran maestro T7.4",
+        "valor": "Botas de guardatumbas del gran maestro T7.4"
+    },{
+        "texto": "Botas de demonio del gran maestro T7.0",
+        "valor": "Botas de demonio del gran maestro T7.0"
+    },
+    {
+        "texto": "Botas de demonio del gran maestro T7.1",
+        "valor": "Botas de demonio del gran maestro T7.1"
+    },
+    {
+        "texto": "Botas de demonio del gran maestro T7.2",
+        "valor": "Botas de demonio del gran maestro T7.2"
+    },
+    {
+        "texto": "Botas de demonio del gran maestro T7.3",
+        "valor": "Botas de demonio del gran maestro T7.3"
+    },
+    {
+        "texto": "Botas de demonio del gran maestro T7.4",
+        "valor": "Botas de demonio del gran maestro T7.4"
+    },{
+        "texto": "Botas de juez del gran maestro T7.0",
+        "valor": "Botas de juez del gran maestro T7.0"
+    },
+    {
+        "texto": "Botas de juez del gran maestro T7.1",
+        "valor": "Botas de juez del gran maestro T7.1"
+    },
+    {
+        "texto": "Botas de juez del gran maestro T7.2",
+        "valor": "Botas de juez del gran maestro T7.2"
+    },
+    {
+        "texto": "Botas de juez del gran maestro T7.3",
+        "valor": "Botas de juez del gran maestro T7.3"
+    },
+    {
+        "texto": "Botas de juez del gran maestro T7.4",
+        "valor": "Botas de juez del gran maestro T7.4"
+    },{
+        "texto": "Botas crepusculares del gran maestro T7.0",
+        "valor": "Botas crepusculares del gran maestro T7.0"
+    },
+    {
+        "texto": "Botas crepusculares del gran maestro T7.1",
+        "valor": "Botas crepusculares del gran maestro T7.1"
+    },
+    {
+        "texto": "Botas crepusculares del gran maestro T7.2",
+        "valor": "Botas crepusculares del gran maestro T7.2"
+    },
+    {
+        "texto": "Botas crepusculares del gran maestro T7.3",
+        "valor": "Botas crepusculares del gran maestro T7.3"
+    },
+    {
+        "texto": "Botas crepusculares del gran maestro T7.4",
+        "valor": "Botas crepusculares del gran maestro T7.4"
+    },{
+        "texto": "Botas de valor del gran maestro T7.0",
+        "valor": "Botas de valor del gran maestro T7.0"
+    },
+    {
+        "texto": "Botas de valor del gran maestro T7.1",
+        "valor": "Botas de valor del gran maestro T7.1"
+    },
+    {
+        "texto": "Botas de valor del gran maestro T7.2",
+        "valor": "Botas de valor del gran maestro T7.2"
+    },
+    {
+        "texto": "Botas de valor del gran maestro T7.3",
+        "valor": "Botas de valor del gran maestro T7.3"
+    },
+    {
+        "texto": "Botas de valor del gran maestro T7.4",
+        "valor": "Botas de valor del gran maestro T7.4"
+    },{
+        "valor": "Botas de soldado del anciano T8",
+        "texto": "Botas de soldado del anciano T8"
+    },{
+        "valor": "Botas de soldado del anciano T8.1",
+        "texto": "Botas de soldado del anciano T8.1"
+    },{
+        "valor": "Botas de soldado del anciano T8.2",
+        "texto": "Botas de soldado del anciano T8.2"
+    },{
+        "valor": "Botas de soldado del anciano T8.3",
+        "texto": "Botas de soldado del anciano T8.3"
+    },{
+        "valor": "Botas de soldado del anciano T8.4",
+        "texto": "Botas de soldado del anciano T8.4"
+    },{
+        "texto": "Botas del caballero del anciano T8.0",
+        "valor": "Botas del caballero del anciano T8.0"
+    },
+    {
+        "texto": "Botas del caballero del anciano T8.1",
+        "valor": "Botas del caballero del anciano T8.1"
+    },
+    {
+        "texto": "Botas del caballero del anciano T8.2",
+        "valor": "Botas del caballero del anciano T8.2"
+    },
+    {
+        "texto": "Botas del caballero del anciano T8.3",
+        "valor": "Botas del caballero del anciano T8.3"
+    },
+    {
+        "texto": "Botas del caballero del anciano T8.4",
+        "valor": "Botas del caballero del anciano T8.4"
+    },{
+        "texto": "Botas de guardian del anciano T8.0",
+        "valor": "Botas de guardian del anciano T8.0"
+    },
+    {
+        "texto": "Botas de guardian del anciano T8.1",
+        "valor": "Botas de guardian del anciano T8.1"
+    },
+    {
+        "texto": "Botas de guardian del anciano T8.2",
+        "valor": "Botas de guardian del anciano T8.2"
+    },
+    {
+        "texto": "Botas de guardian del anciano T8.3",
+        "valor": "Botas de guardian del anciano T8.3"
+    },
+    {
+        "texto": "Botas de guardian del anciano T8.4",
+        "valor": "Botas de guardian del anciano T8.4"
+    },{
+        "texto": "Botas reales del anciano T8.0",
+        "valor": "Botas reales del anciano T8.0"
+    },
+    {
+        "texto": "Botas reales del anciano T8.1",
+        "valor": "Botas reales del anciano T8.1"
+    },
+    {
+        "texto": "Botas reales del anciano T8.2",
+        "valor": "Botas reales del anciano T8.2"
+    },
+    {
+        "texto": "Botas reales del anciano T8.3",
+        "valor": "Botas reales del anciano T8.3"
+    },
+    {
+        "texto": "Botas reales del anciano T8.4",
+        "valor": "Botas reales del anciano T8.4"
+    },{
+        "texto": "Botas de guardatumbas del anciano T8.0",
+        "valor": "Botas de guardatumbas del anciano T8.0"
+    },
+    {
+        "texto": "Botas de guardatumbas del anciano T8.1",
+        "valor": "Botas de guardatumbas del anciano T8.1"
+    },
+    {
+        "texto": "Botas de guardatumbas del anciano T8.2",
+        "valor": "Botas de guardatumbas del anciano T8.2"
+    },
+    {
+        "texto": "Botas de guardatumbas del anciano T8.3",
+        "valor": "Botas de guardatumbas del anciano T8.3"
+    },
+    {
+        "texto": "Botas de guardatumbas del anciano T8.4",
+        "valor": "Botas de guardatumbas del anciano T8.4"
+    },{
+        "texto": "Botas de demonio del anciano T8.0",
+        "valor": "Botas de demonio del anciano T8.0"
+    },
+    {
+        "texto": "Botas de demonio del anciano T8.1",
+        "valor": "Botas de demonio del anciano T8.1"
+    },
+    {
+        "texto": "Botas de demonio del anciano T8.2",
+        "valor": "Botas de demonio del anciano T8.2"
+    },
+    {
+        "texto": "Botas de demonio del anciano T8.3",
+        "valor": "Botas de demonio del anciano T8.3"
+    },
+    {
+        "texto": "Botas de demonio del anciano T8.4",
+        "valor": "Botas de demonio del anciano T8.4"
+    },{
+        "texto": "Botas de juez del anciano T8.0",
+        "valor": "Botas de juez del anciano T8.0"
+    },
+    {
+        "texto": "Botas de juez del anciano T8.1",
+        "valor": "Botas de juez del anciano T8.1"
+    },
+    {
+        "texto": "Botas de juez del anciano T8.2",
+        "valor": "Botas de juez del anciano T8.2"
+    },
+    {
+        "texto": "Botas de juez del anciano T8.3",
+        "valor": "Botas de juez del anciano T8.3"
+    },
+    {
+        "texto": "Botas de juez del anciano T8.4",
+        "valor": "Botas de juez del anciano T8.4"
+    },{
+        "texto": "Botas crepusculares del anciano T8.0",
+        "valor": "Botas crepusculares del anciano T8.0"
+    },
+    {
+        "texto": "Botas crepusculares del anciano T8.1",
+        "valor": "Botas crepusculares del anciano T8.1"
+    },
+    {
+        "texto": "Botas crepusculares del anciano T8.2",
+        "valor": "Botas crepusculares del anciano T8.2"
+    },
+    {
+        "texto": "Botas crepusculares del anciano T8.3",
+        "valor": "Botas crepusculares del anciano T8.3"
+    },
+    {
+        "texto": "Botas crepusculares del anciano T8.4",
+        "valor": "Botas crepusculares del anciano T8.4"
+    },{
+        "texto": "Botas de valor del anciano T8.0",
+        "valor": "Botas de valor del anciano T8.0"
+    },
+    {
+        "texto": "Botas de valor del anciano T8.1",
+        "valor": "Botas de valor del anciano T8.1"
+    },
+    {
+        "texto": "Botas de valor del anciano T8.2",
+        "valor": "Botas de valor del anciano T8.2"
+    },
+    {
+        "texto": "Botas de valor del anciano T8.3",
+        "valor": "Botas de valor del anciano T8.3"
+    },
+    {
+        "texto": "Botas de valor del anciano T8.4",
+        "valor": "Botas de valor del anciano T8.4"
+    }
+    
+] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
