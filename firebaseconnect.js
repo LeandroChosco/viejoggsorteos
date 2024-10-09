@@ -22,7 +22,7 @@ export class ManageAccount {
   authenticate(email, password) {
     signInWithEmailAndPassword(auth, email, password)
       .then((_) => {
-        window.location.href = "./components/sorteos/sorteos.html";
+        window.location.href = "./src/components/sorteos/sorteos.html";
         // Mostrar alerta de inicio de sesión exitoso
       })
       .catch((error) => {
