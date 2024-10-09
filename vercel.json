@@ -8,7 +8,12 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",  
+      "src": "/(.*)",
+      "headers": {
+        "Access-Control-Allow-Origin": "https://leandrochosco.github.io",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization"
+      },  
       "dest": "/src/$1"
     },
     {
