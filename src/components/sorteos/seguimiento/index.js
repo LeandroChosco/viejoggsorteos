@@ -1,5 +1,5 @@
 
-import {app} from '../../../firebaseconfig.js';
+import {app} from '../../../../firebaseconfig.js';
 import { getFirestore, collection, onSnapshot, query, orderBy, limit, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
 
 const db = getFirestore(app);
