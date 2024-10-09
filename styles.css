@@ -323,6 +323,12 @@ body{
                 min-height: auto;
 
         }
+        #myVideo {
+                min-width: 100%;
+                min-height: 100%;
+                height: 300px; /* Tamaño fijo para evitar desproporciones */
+                object-fit: cover;
+              }
         .ring{
                 margin-left: 50%;
         }
