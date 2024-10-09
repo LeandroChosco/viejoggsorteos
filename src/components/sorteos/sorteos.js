@@ -75,4 +75,4 @@ function inicializarAutocompletado(datosItems) {
 }
 
 // Llama a la función para cargar los datos del JSON
-cargarDatos("http://localhost:3000/api/users/items"); 
+cargarDatos("https://backendsorteos.vercel.app/api/users/items"); 
