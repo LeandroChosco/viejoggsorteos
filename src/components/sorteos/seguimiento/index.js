@@ -1,9 +1,9 @@
-
-import {app} from '../../../../firebaseconfig.js';
+import { app } from '../../../../firebaseconfig.js';
 import { getFirestore, collection, onSnapshot, query, orderBy, limit, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
 
 const db = getFirestore(app);
 const itemsCollectionRef = collection(db, "sorteos");
+
 async function getAndDisplayItems() {
   const q = query(itemsCollectionRef, orderBy("fecha", "desc"), limit(10));
   const unsubscribe = onSnapshot(q, itemsCollectionRef, (querySnapshot) => {
@@ -11,7 +11,7 @@ async function getAndDisplayItems() {
     tableBody.innerHTML = ""; // Limpiar filas existentes
 
     const pendientes = [];
-    const entregados = [];
+    const depositados = []; // Cambiado de 'entregados' a 'depositados'
 
     querySnapshot.forEach((doc) => {
       const itemData = doc.data();
@@ -33,8 +33,8 @@ async function getAndDisplayItems() {
       // Clasificar los items por estado
       if (itemData.estado === 'pendiente') {
         pendientes.push(itemRow); // Guardar los pendientes
-      } else if (itemData.estado === 'entregado') {
-        entregados.push(itemRow); // Guardar los entregados
+      } else if (itemData.estado === 'Depositado') {
+        depositados.push(itemRow); // Guardar los depositados
       }
     });
 
@@ -43,8 +43,8 @@ async function getAndDisplayItems() {
       insertarFilaEnTabla(item, tableBody);
     });
 
-    // Luego agregar los entregados al DOM
-    entregados.forEach(item => {
+    // Luego agregar los depositados al DOM
+    depositados.forEach(item => {
       insertarFilaEnTabla(item, tableBody);
     });
   });
@@ -72,21 +72,26 @@ function insertarFilaEnTabla(itemData, tableBody) {
   // Crear el elemento select para "estado"
   const selectEstado = document.createElement('select');
   const opcionPendiente = document.createElement('option');
-  const opcionEntregado = document.createElement('option');
+  const opcionDepositado = document.createElement('option'); // Cambiado de 'entregado' a 'depositado'
 
   opcionPendiente.value = 'pendiente';
   opcionPendiente.textContent = 'Pendiente';
-  opcionEntregado.value = 'entregado';
-  opcionEntregado.textContent = 'Entregado';
+  opcionDepositado.value = 'Depositado'; // El valor sigue siendo 'entregado' para la base de datos
+  opcionDepositado.textContent = 'Depositado'; // Cambiado el texto a 'Depositado'
 
   selectEstado.appendChild(opcionPendiente);
-  selectEstado.appendChild(opcionEntregado);
+  selectEstado.appendChild(opcionDepositado);
 
   // Establecer el estado inicial del select según los datos
   selectEstado.value = itemData.estado;
 
   // Agregar el select a la celda de "estado"
   cell3.appendChild(selectEstado);
+
+  // Cambiar el fondo de la fila si el estado es "depositado"
+  if (itemData.estado === 'Depositado') {
+    row.style.backgroundColor = '#3e8844'; // Color verde claro
+  }
 
   // Manejar el evento de cambio de estado
   selectEstado.addEventListener('change', (event) => {
@@ -97,16 +102,23 @@ function insertarFilaEnTabla(itemData, tableBody) {
       .then(() => {
         console.log("Estado actualizado correctamente");
 
-        // Si el estado es "entregado", enviar los datos a MongoDB
-        if (nuevoEstado === 'entregado') {
+        // Cambiar el fondo de la fila si el estado es "depositado"
+        if (nuevoEstado === 'Depositado') {
+          row.style.backgroundColor = '#3e8844'; // Color verde claro
+        } else {
+          row.style.backgroundColor = ''; // Resetear color si no es "depositado"
+        }
+
+        // Si el estado es "depositado", enviar los datos a MongoDB
+        if (nuevoEstado === 'Depositado') {
           const fechaFormateada = moment().format('DD/MM/YYYY HH:mm'); // Usar Moment.js para formatear la fecha
 
           enviarDatosAMongo({
-              userAlbion: itemData.nickAlbion,
-              items: itemData.item,
-              estado: nuevoEstado,
-              cliente: "ViejoGG",
-              fecha: fechaFormateada // Usar la fecha formateada
+            userAlbion: itemData.nickAlbion,
+            items: itemData.item,
+            estado: nuevoEstado,
+            cliente: "ViejoGG",
+            fecha: fechaFormateada // Usar la fecha formateada
           });
         }
       })
@@ -142,4 +154,5 @@ async function enviarDatosAMongo(data) {
     console.error('Error:', error);
   }
 }
+
 getAndDisplayItems();
