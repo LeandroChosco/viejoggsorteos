@@ -1,6 +1,7 @@
 import { ManageAccount } from '../../firebase/firebaseconnect.js';
 
 const letters = document.querySelectorAll(".lettersLeft");
+
 letters.forEach((letter, index) => {
   letter.style.animationDelay = `${index * 0.5}s`;
 });

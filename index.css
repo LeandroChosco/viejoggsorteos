@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
+
+html {
+        width: 100vw;
+}
+
 * {
         margin: 0;
         padding: 0;
@@ -26,6 +31,10 @@ body {
         object-fit: cover;
         z-index: -1;
         opacity: 0.45;
+}
+
+#i-viejo{
+        width: 40px;
 }
 
 .ring {
@@ -333,39 +342,37 @@ body {
 /* responsive movil */
 
 @media (max-width: 768px) {
-
         body {
                 display: flex;
                 flex-direction: column;
-                justify-content: start;
+                justify-content: center;
                 min-height: auto;
-
-
         }
 
         #myVideo {
-                min-width: 100%;
-                min-height: 100%;
-                height: 300px;
-                width: 350px;
+                width: 100vw;
                 object-fit: cover;
         }
 
+        #nav-links{
+                justify-content: space-evenly;
+        }
+
+        .logo {
+                width: 100vw;
+        }
+
+        .logo.slide-in-bck-center {
+                width: 100vw;
+        }
+
         .ring {
-                margin-left: 50%;
+                width: 100vw;
+                margin: 0;
         }
 
         .ring i {
                 display: none;
         }
 
-        .logo img {
-                width: 50%;
-                margin-left: 50%;
-        }
-
-        .logo .letterLogo {
-                font-size: 2em;
-                margin-left: 50%;
-        }
 }

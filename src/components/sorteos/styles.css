@@ -399,6 +399,7 @@ a {
         top: 0;
         right: 0;
         height: 150px;
+        justify-content: space-evenly;
     }
 
     /* Ajusta los enlaces dentro del menú */
