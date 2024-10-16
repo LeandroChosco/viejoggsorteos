@@ -1,19 +1,23 @@
 import { ManageAccount } from '../../firebase/firebaseconnect.js';
 
-const letters = document.querySelectorAll(".lettersLeft");
-
-letters.forEach((letter, index) => {
-  letter.style.animationDelay = `${index * 0.5}s`;
-});
-const lettersbottom = document.querySelectorAll(".lettersBottom");
-lettersbottom.forEach((letter, index) => {
-  letter.style.animationDelay = `${index * 0.5}s`;
-});
-
+const lettersLeft = document.querySelectorAll(".lettersLeft");
+const lettersBottom = document.querySelectorAll(".lettersBottom");
 const letterRight = document.querySelectorAll(".lettersRight");
+
+lettersLeft.forEach((letter, index) => {
+  letter.style.animationDelay = `${index * 0.5}s`;
+});
+
+lettersBottom.forEach((letter, index) => {
+  letter.style.animationDelay = `${index * 0.5}s`;
+});
+
 letterRight.forEach((letter, index) => {
   letter.style.animationDelay = `${index * 0.5}s`;
 });
+
+
+
 document.getElementById("login").addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -22,5 +26,5 @@ document.getElementById("login").addEventListener("submit", (event) => {
 
   const account = new ManageAccount();
   account.authenticate(email, password);
-  
+
 });

@@ -33,7 +33,7 @@ body {
         opacity: 0.45;
 }
 
-#i-viejo{
+#i-viejo {
         width: 40px;
 }
 
@@ -348,13 +348,14 @@ body {
                 justify-content: center;
                 min-height: auto;
         }
-
+        
         #myVideo {
+                display: none;
                 width: 100vw;
                 object-fit: cover;
         }
 
-        #nav-links{
+        #nav-links {
                 justify-content: space-evenly;
         }
 
