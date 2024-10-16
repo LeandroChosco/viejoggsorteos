@@ -152,6 +152,8 @@ body {
         text-align: center;
         letter-spacing: 5px;
         margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
 }
 
 .slide-in-blurred-bl {
