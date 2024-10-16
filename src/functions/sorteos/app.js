@@ -7,11 +7,10 @@ const navLinks = document.querySelector('.nav-links');
 
 
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');  // Muestra/oculta el menú
-        hamburger.classList.toggle('toggle'); // Cambia el icono de hamburguesa
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('toggle');
     });
 
 agregarEventos();
 
-// Llama a la función para cargar los datos del JSON
-cargarDatos("./monturas.json");
+cargarDatos("https://backendsorteos.vercel.app/api/users/items");

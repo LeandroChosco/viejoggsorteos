@@ -4,6 +4,7 @@
   "description": "Gestor sorteos",
   "main": "index.js",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "firebase": "^10.13.2",
     "moment": "^2.30.1"
   },

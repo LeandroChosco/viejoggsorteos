@@ -16,8 +16,8 @@ const sugerencias = document.getElementById("sugerencias");
 const valorSeleccionado = document.getElementById("valorSeleccionado");
 
 hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');  // Muestra/oculta el menú
-  hamburger.classList.toggle('toggle'); // Cambia el icono de hamburguesa
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('toggle');
 });
 
 function cargarDatos(url) {
@@ -29,8 +29,8 @@ function cargarDatos(url) {
       return response.json();
     })
     .then((data) => {
-      datosItems = data; // Guardar los datos recibidos
-      inicializarAutocompletado(datosItems); // Usar los datos recibidos
+      datosItems = data;
+      inicializarAutocompletado(datosItems);
     })
     .catch((error) => {
       console.error('Hubo un problema con la petición fetch:', error);
@@ -41,7 +41,7 @@ function inicializarAutocompletado(datosItems) {
   buscador.addEventListener("input", (event) => {
     const valorBuscado = event.target.value.toLowerCase();
     sugerencias.innerHTML = "";
-    valorSeleccionado.value = ""; // Limpiar valor oculto cuando el usuario escribe
+    valorSeleccionado.value = "";
 
     const resultados = datosItems.filter((item) =>
       item.texto.toLowerCase().includes(valorBuscado)
@@ -52,7 +52,7 @@ function inicializarAutocompletado(datosItems) {
       li.textContent = item.texto;
       li.addEventListener("click", () => {
         buscador.value = item.texto;
-        valorSeleccionado.value = item.valor; // Asignar el valor seleccionado
+        valorSeleccionado.value = item.valor;
         sugerencias.innerHTML = "";
         sugerencias.style.display = "none";
         document.removeEventListener("click", handleClickOutside);
@@ -72,13 +72,11 @@ function inicializarAutocompletado(datosItems) {
     }
   }
 
-  // Validación en el submit del formulario
   const form = document.getElementById("form");
   form.addEventListener("submit", (event) => {
-    const buscadorValor = buscador.value.trim(); // Eliminar espacios en blanco
+    const buscadorValor = buscador.value.trim();
 
   });
 }
 
-// Llama a la función para cargar los datos del JSON
 cargarDatos("https://backendsorteos.vercel.app/api/users/items");

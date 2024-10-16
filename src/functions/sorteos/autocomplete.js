@@ -1,5 +1,3 @@
-// js/autocomplete.js
-
 function cargarDatos(url) {
     fetch(url)
         .then((response) => response.json())
@@ -33,10 +31,8 @@ function inicializarAutocompletado(datosItems) {
             sugerencias.appendChild(li);
         });
 
-        // Abre la lista de sugerencias
         sugerencias.style.display = "block";
 
-        // Cierra la lista al hacer clic fuera
         document.addEventListener("click", handleClickOutside);
     });
 
@@ -48,5 +44,4 @@ function inicializarAutocompletado(datosItems) {
     }
 }
 
-// Llama a la función para cargar los datos del JSON
 export { cargarDatos };

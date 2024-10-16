@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ViejoGG Sorteos</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script type="module" src="firestore.js"></script>
-    <script type="module" src="app.js"></script>
-  </head>
-  <body>
-    <video src="background.mp4" type="video/mp4" autoplay muted loop id="myVideo">
+
+<head>
+  <title>ViejoGG Sorteos</title>
+  <link rel="icon" href="src/assets/image/logoViejo.png" type="image/x-icon">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script type="module" src="src/firebase/firestore.js"></script>
+  <script type="module" src="src/functions/home/app.js"></script>
+</head>
+
+<body>
+  <video src="src/assets/video/background.mp4" type="video/mp4" autoplay muted loop id="myVideo">
+  </video>
+  <div class="logo">
+    <img src="src/assets/image/logoViejo.png" alt="ViejoGG" class="logo slide-in-bck-center">
     </video>
-    <div class="logo">
-      <img src="logoViejo.png" alt="ViejoGG" class="logo slide-in-bck-center">
-      </video>
-        <div class="letterLogo">
-          <div class="lettersLeft slide-in-blurred-bl">V</div>
-          <div class="lettersLeft slide-in-blurred-bl">i</div>
-          <div class="lettersBottom slide-in-blurred-bottom">e</div>
-          <div class="lettersBottom slide-in-blurred-bottom">j</div>
-          <div class="lettersBottom slide-in-blurred-bottom">o</div>
-          <div class="lettersRight slide-in-blurred-br">G</div>
-          <div class="lettersRight slide-in-blurred-br">G</div>
-        </div>
+    <div class="letterLogo">
+      <div class="lettersLeft slide-in-blurred-bl">V</div>
+      <div class="lettersLeft slide-in-blurred-bl">i</div>
+      <div class="lettersBottom slide-in-blurred-bottom">e</div>
+      <div class="lettersBottom slide-in-blurred-bottom">j</div>
+      <div class="lettersBottom slide-in-blurred-bottom">o</div>
+      <div class="lettersRight slide-in-blurred-br">G</div>
+      <div class="lettersRight slide-in-blurred-br">G</div>
     </div>
-    <div class="ring">
-      <i style="--clr: #f0d40d;"></i>
-      <i style="--clr: #ffffff;"></i>
-      <i style="--clr: #f0d40d;"></i>
+  </div>
+  <div class="ring">
+    <i style="--clr: #f0d40d;"></i>
+    <i style="--clr: #ffffff;"></i>
+    <i style="--clr: #f0d40d;"></i>
 
-      <form class="login" id="login">
-        <h2>Login</h2>
-        <div class="inputBox">
-            <input type="email" placeholder="Username" id="email" autocomplete="off"/>
-            <input type="password" placeholder="Password" id="password">
-            <input type="submit" placeholder="Sign in"/>
+    <form class="login" id="login">
+      <h2>Login</h2>
+      <div class="inputBox">
+        <input type="email" placeholder="Username" id="email" autocomplete="off" />
+        <input type="password" placeholder="Password" id="password">
+        <input type="submit" placeholder="Sign in" />
+    </form>
+  </div>
+  <script type="module" src="src/functions/home/login.js"></script>
+</body>
 
-        </form>
-    </div>
-    <script type="module" src="./login.js"></script>
-  </body>
 </html>

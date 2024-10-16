@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gestion de sorteos</title>
+  <title>Gestión de sorteos</title>
+  <link rel="icon" href="../../assets/image/logoViejo.png" type="image/x-icon">
   <meta charset="utf-8" />
   <link rel="stylesheet" href="styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-  <script type="module" src="../../../firebaseconnect.js"></script>
-  <script type="module" src="../../../firebaseconnectDB.js"></script>
+  <script type="module" src="../../firebase/firebaseconnect.js"></script>
+  <script type="module" src="../../firebase/firebaseconnectDB.js"></script>
 </head>
 <body>
   <div class="container">
     <nav>
-      <img src="../../image/logoViejo.png" alt="ViejoGG" class="logo" />
+      <img src="../../assets/image/logoViejo.png" alt="ViejoGG" class="logo" />
       <span>ViejoGG</span>
       <ul class="nav-links">
         <li>
           <a href="#">Inicio</a>
         </li>
         <li>
-          <a href="./seguimiento/seguimiento.html">Seguimiento de sorteo</a>
+          <a href="../seguimiento/seguimiento.html">Seguimiento de sorteo</a>
         </li>
         <li>
-          <a href="../../../index.html" onclick="signOut()">Cerrar Sesion</a>
+          <a href="../../../index.html" onclick="signOut()">Cerrar sesión</a>
         </li>
         
       </ul>
@@ -62,7 +63,7 @@
           <th class="th01">Nick de Albion</th>
           <th class="th02">Items/Montura</th>
           <th class="th03">Estado</th>
-          <th class="th04">Fecha y Hora</th>
+          <th class="th04">Fecha y hora</th>
         </tr>
       </thead>
       <tbody >
@@ -70,6 +71,6 @@
     </table>
   </div>
 
-  <script src="./sorteos.js"></script>
+  <script src="../../functions/sorteos/sorteos.js"></script>
 </body>
 </html>

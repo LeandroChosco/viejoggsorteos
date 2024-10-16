@@ -1,4 +1,4 @@
-import { ManageAccount } from './firebaseconnect.js';
+import { ManageAccount } from '../../firebase/firebaseconnect.js';
 
 const letters = document.querySelectorAll(".lettersLeft");
 letters.forEach((letter, index) => {
@@ -23,5 +23,3 @@ document.getElementById("login").addEventListener("submit", (event) => {
   account.authenticate(email, password);
   
 });
-
-console.log('Formulario de Inicio de Sesión');

@@ -1,66 +1,74 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-:root{
+
+:root {
     --x: 45deg;
 }
-.container{
+
+.container {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(9,0,77,0.65), rgba(9,0,77,0.65)), url(../../../image/image.jpg);
+    background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url(../../assets/image/image.jpg);
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
 }
 
-nav{
+nav {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
 }
-.logo{
+
+.logo {
     width: 180px;
     cursor: pointer;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     width: 100%;
     text-align: right;
     padding-right: 60px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin-left: 10px 20px;
     margin-right: 30px;
 }
-nav ul li a{
-    color:#fff;
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
 }
-nav span{
+
+nav span {
     color: #fff;
     font-size: 1.5em;
     cursor: pointer;
 }
-h1{
+
+h1 {
     font-size: 3em;
     color: #fff;
     text-align: center;
     margin-top: 30px;
 }
-.logo{
+
+.logo {
     width: 75px;
     height: 75px;
     cursor: pointer;
 }
 
-.titleTable{
+.titleTable {
     color: #fff;
     font-size: 2em;
     margin-top: 30px;
@@ -78,11 +86,12 @@ table {
 }
 
 
-table th, table td {
+table th,
+table td {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    
+
 }
 
 table th {
@@ -92,6 +101,7 @@ table th {
 table tr:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
 select {
     width: calc(100% - 24px);
     padding: 10px;
@@ -102,6 +112,7 @@ select {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
 }
+
 select option {
     background: rgba(9, 0, 77, 0.65);
     color: #fff;
@@ -109,7 +120,7 @@ select option {
 
 /* Icono del menú hamburguesa */
 .hamburger {
-    display: none; /* Se oculta por defecto en pantallas grandes */
+    display: none;
     cursor: pointer;
     flex-direction: column;
     height: 20px;
@@ -122,7 +133,7 @@ select option {
     height: 3px;
     background-color: white;
     border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Suave transición para el color de fondo */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Cambios de icono en estado activo (menú abierto) */
@@ -136,10 +147,10 @@ select option {
 
 .hamburger.toggle span:nth-child(3) {
     transform: rotate(-45deg) translateY(-6px);
-}   
+}
 
-@media only screen and (max-width: 768px){
-    /* Configuración del menú oculto por defecto */
+@media only screen and (max-width: 768px) {
+
     /* Configuración del menú oculto por defecto */
     ul {
         position: absolute;
@@ -153,15 +164,15 @@ select option {
         align-items: center;
         overflow: hidden;
         transition: height 0.3s ease-in;
-        z-index: 1; /* Asegúrate de que el menú esté encima del contenido */
+        z-index: 1;
     }
 
     /* Estilo cuando el menú está activo */
     ul.active {
         position: absolute;
-        top:0;
-        right:0;
-        height: 150px; /* Ajusta este valor según la cantidad de enlaces */
+        top: 0;
+        right: 0;
+        height: 150px;
     }
 
     /* Ajusta los enlaces dentro del menú */
@@ -174,44 +185,50 @@ select option {
         display: flex;
         z-index: 2;
     }
-    .titleTable{
+
+    .titleTable {
         color: #fff;
         font-size: 1.5em;
         margin-top: 30px;
         margin-bottom: 20px;
     }
-    th, td {
-        font-size: 12px; /* Reduce el tamaño de la fuente */
-        padding: 6px; /* Reduce el espaciado en las celdas */
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 6px;
         width: 33.33333%;
     }
 
     /* Mantener las columnas en una fila y permitir que se reduzcan */
     table {
         display: flex;
-        flex-direction: column; /* Cambia a flexbox */
+        flex-direction: column;
     }
 
     table tr {
-        display: flex; /* Usar flexbox para las filas */
-        flex-wrap: wrap; /* Permitir el ajuste de las celdas */
+        display: flex;
+        flex-wrap: wrap;
     }
 
 
     td {
-        display: block; /* Cada celda se muestra como un bloque */
-        width: 33.33333%; /* Cada celda ocupa el 50% del ancho de la fila */
+        display: block;
+        width: 33.33333%;
     }
-        
-    .mobileCol{
+
+    .mobileCol {
         display: none;
     }
-    .col3{
+
+    .col3 {
         width: 33.3333%;
     }
-    .col4{
+
+    .col4 {
         display: none;
     }
+
     select {
         width: 100%;
         padding: 3px;

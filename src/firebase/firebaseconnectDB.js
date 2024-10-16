@@ -3,31 +3,24 @@ import { getFirestore, addDoc, collection, onSnapshot, query, orderBy, limit, wh
 
 const db = getFirestore(app);
 
-// Referencia al formulario
 const form = document.getElementById("form");
 
-// Escuchar el evento de envío del formulario
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Obtener valores de los campos
   const nickName = document.getElementById("nickAlbion").value.trim();
   const item = document.getElementById("valorSeleccionado").value;
 
-  // Validar que ambos campos estén completos
   if (nickName === "" || item === "") {
     alert("Debes completar todos los campos correctamente.");
-    return; // No continuar si los campos no son válidos
+    return;
   }
 
-  // Si todo está bien, proceder a agregar el usuario
   addUser(nickName, item);
 });
 
-// Colección en Firestore
 const itemsCollectionRef = collection(db, "sorteos");
 
-// Función para agregar el usuario
 async function addUser(nickName, item) {
   try {
     const docRef = await addDoc(itemsCollectionRef, {
@@ -36,25 +29,22 @@ async function addUser(nickName, item) {
       estado: "pendiente",
       fecha: new Date(),
     });
-    console.log("Documento escrito con ID: ", docRef.id);
     alert("Ganador agregado con éxito");
 
-    // Limpiar el formulario después de agregar el documento
-    form.reset();  // Restablece todos los campos del formulario
-    document.getElementById("valorSeleccionado").value = ""; // Asegúrate de limpiar el campo oculto también
+    form.reset();
+    document.getElementById("valorSeleccionado").value = "";
   } catch (e) {
     console.error("Error al agregar el documento: ", e);
   }
 }
 
-// Función para obtener y mostrar los ítems en la tabla
 async function getAndDisplayItems() {
   const q = query(itemsCollectionRef, where("estado", "==", "pendiente"), orderBy("fecha", "desc"), limit(10));
   const unsubscribe = onSnapshot(q, (querySnapshot) => {
     const tableBody = document
       .getElementById("itemsTable")
       .getElementsByTagName("tbody")[0];
-    tableBody.innerHTML = ""; // Limpiar tabla antes de llenarla nuevamente
+    tableBody.innerHTML = "";
 
     querySnapshot.forEach((doc) => {
       const itemData = doc.data();
@@ -64,7 +54,6 @@ async function getAndDisplayItems() {
       const date = new Date(seconds * 1000 + nanoseconds / 1000000);
       const formattedDate = moment(date).format('DD/MM/YYYY HH:mm');
 
-      // Crear fila en la tabla
       const row = tableBody.insertRow();
       row.classList.add("added");
 
@@ -86,5 +75,4 @@ async function getAndDisplayItems() {
   });
 }
 
-// Ejecutar la función para mostrar los ítems
 getAndDisplayItems();

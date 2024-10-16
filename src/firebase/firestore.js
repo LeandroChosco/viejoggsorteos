@@ -13,7 +13,6 @@ async function addUser(nickName, item) {
             estado: "pendiente",
             fecha: new Date(),
         });
-        console.log("Document written with ID: ", docRef.id);
     } catch (e) {
         console.error("Error adding document: ", e);
     }
@@ -23,10 +22,10 @@ function getAndDisplayItems() {
     const q = query(itemsCollectionRef, where("estado", "==", "pendiente"), orderBy("fecha", "desc"), limit(10));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
         const tableBody = document.getElementById("itemsTable").getElementsByTagName("tbody")[0];
-        tableBody.innerHTML = ""; 
-        querySnapshot.forEach((doc) => {  
+        tableBody.innerHTML = "";
+        querySnapshot.forEach((doc) => {
             const itemData = doc.data();
-            const timestampData = itemData.fecha; 
+            const timestampData = itemData.fecha;
             const seconds = timestampData.seconds;
             const nanoseconds = timestampData.nanoseconds;
             const date = new Date(seconds * 1000 + nanoseconds / 1000000);
