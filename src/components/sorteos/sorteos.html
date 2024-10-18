@@ -10,6 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <script type="module" src="../../firebase/firebaseconnect.js"></script>
   <script type="module" src="../../firebase/firebaseconnectDB.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -64,13 +65,24 @@
           <th class="th02">Items/Montura</th>
           <th class="th03">Estado</th>
           <th class="th04">Fecha y hora</th>
+          <th class="th05">Acciones</th>
         </tr>
       </thead>
       <tbody >
       </tbody>
     </table>
+    
   </div>
-
+  <div id="confirmDeleteModal" class="modal-overlay">
+    <div class="modal-content">
+      <h2>Confirmar eliminación</h2>
+      <p>¿Estás seguro de que deseas eliminar este sorteo?</p>
+      <div class="modal-actions">
+        <button id="cancelDeleteButton" class="btn-cancel">Cancelar</button>
+        <button id="confirmDeleteButton" class="btn-delete">Eliminar</button>
+      </div>
+    </div>
+  </div>
   <script src="../../functions/sorteos/sorteos.js"></script>
 </body>
 </html>
